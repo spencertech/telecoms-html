@@ -1,0 +1,51 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Mobile Communications Network / Mobile Communications Network</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_BDD.htm'>BDD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_Class.htm'>Class</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_FlowInternalBlock.htm'>FlowInternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_Hierarchy.htm'>Hierarchy</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_InterfaceBlock.htm'>InterfaceBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_InternalBlock.htm'>InternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070_InterfaceBlock.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='355,88,505,183' href='aff7b54d-a147-42a9-98b0-48d3edadae78_e1a383d5-8cab-45a3-b2b0-a451e9457af4.htm'>
+<area shape='rect' coords='41,88,191,183' href='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612.htm'>
+<area shape='rect' coords='41,424,191,519' href='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d.htm'>
+<area shape='rect' coords='758,88,908,183' href='aff7b54d-a147-42a9-98b0-48d3edadae78_b9889bc6-23cc-4782-b705-9a73ffa240e4.htm'>
+<area shape='rect' coords='216,130,310,146' href='aff7b54d-a147-42a9-98b0-48d3edadae78_9106f363-5244-4cea-bb94-cb9a45234619.htm'>
+<area shape='rect' coords='548,130,695,146' href='aff7b54d-a147-42a9-98b0-48d3edadae78_c713c524-66d4-4dca-a8d7-d353faf57eb4.htm'>
+<area shape='rect' coords='129,239,145,348' href='aff7b54d-a147-42a9-98b0-48d3edadae78_7d15c2cd-e05d-4319-af2e-b3bea0e607fe.htm'>
+</map>
+</div>
+</body></html>

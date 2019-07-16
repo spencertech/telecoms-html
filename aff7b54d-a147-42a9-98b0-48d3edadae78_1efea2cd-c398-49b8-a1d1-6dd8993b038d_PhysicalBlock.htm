@@ -1,0 +1,47 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Mobile Communications Network / Operation Sub-system</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_BDD.htm'>BDD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_Class.htm'>Class</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_FlowInternalBlock.htm'>FlowInternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_Hierarchy.htm'>Hierarchy</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_InterfaceBlock.htm'>InterfaceBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_InternalBlock.htm'>InternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d_PhysicalBlock.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='41,88,161,173' href='aff7b54d-a147-42a9-98b0-48d3edadae78_d0e92b9e-d2af-43af-9c51-f42f180acf89.htm'>
+<area shape='rect' coords='41,228,161,313' href='aff7b54d-a147-42a9-98b0-48d3edadae78_4dc6b6a4-b512-4e83-b007-4c7325288912.htm'>
+<area shape='rect' coords='41,368,161,453' href='aff7b54d-a147-42a9-98b0-48d3edadae78_ae588181-f47a-4570-9e52-4d74d045db44.htm'>
+</map>
+</div>
+</body></html>
