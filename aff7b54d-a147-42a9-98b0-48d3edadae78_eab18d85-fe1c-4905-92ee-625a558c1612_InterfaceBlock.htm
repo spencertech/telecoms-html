@@ -1,0 +1,49 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Mobile Communications Network / Networking &amp; Switching Sub-system</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_BDD.htm'>BDD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_Class.htm'>Class</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_FlowInternalBlock.htm'>FlowInternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_Hierarchy.htm'>Hierarchy</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_InterfaceBlock.htm'>InterfaceBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_InternalBlock.htm'>InternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612_InterfaceBlock.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='41,88,161,173' href='aff7b54d-a147-42a9-98b0-48d3edadae78_2fd7fd2a-d2cb-493b-ab4b-846c166ee01a.htm'>
+<area shape='rect' coords='216,88,336,173' href='aff7b54d-a147-42a9-98b0-48d3edadae78_299f44ca-0149-4717-b692-a0e1e23daef3.htm'>
+<area shape='rect' coords='41,228,161,313' href='aff7b54d-a147-42a9-98b0-48d3edadae78_b908302b-b29c-483f-a0d5-19c799643252.htm'>
+<area shape='rect' coords='216,228,336,313' href='aff7b54d-a147-42a9-98b0-48d3edadae78_f4a13962-cb2e-4f10-bee3-a3386ac34859.htm'>
+<area shape='rect' coords='41,368,161,453' href='aff7b54d-a147-42a9-98b0-48d3edadae78_13c98098-22df-4b18-b23e-5a97863b7a01.htm'>
+</map>
+</div>
+</body></html>
