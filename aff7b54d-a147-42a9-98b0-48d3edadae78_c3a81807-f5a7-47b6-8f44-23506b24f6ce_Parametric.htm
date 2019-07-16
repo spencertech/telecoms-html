@@ -1,0 +1,53 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>ConstraintDefinition / Number of BTS units required</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_c3a81807-f5a7-47b6-8f44-23506b24f6ce.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_c3a81807-f5a7-47b6-8f44-23506b24f6ce_Parametric.htm'>Parametric</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_c3a81807-f5a7-47b6-8f44-23506b24f6ce_Parametric.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='458,88,680,188' href='aff7b54d-a147-42a9-98b0-48d3edadae78_c3a81807-f5a7-47b6-8f44-23506b24f6ce.htm'>
+<area shape='rect' coords='22,639,42,659' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='322,376,544,476' href='aff7b54d-a147-42a9-98b0-48d3edadae78_856c67b9-3aab-445a-a20b-b9c021211a1c.htm'>
+<area shape='rect' coords='594,376,816,476' href='aff7b54d-a147-42a9-98b0-48d3edadae78_e98938df-851b-4afc-84f5-b9aded7c7f50.htm'>
+<area shape='rect' coords='322,857,544,957' href='aff7b54d-a147-42a9-98b0-48d3edadae78_185bfdcd-cb77-4a8c-9fa6-584598a4a93a.htm'>
+<area shape='rect' coords='22,684,42,704' href='aff7b54d-a147-42a9-98b0-48d3edadae78_65857e6f-f553-424c-aac0-7675139f498e.htm'>
+<area shape='rect' coords='22,729,42,749' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='594,849,816,992' href='aff7b54d-a147-42a9-98b0-48d3edadae78_79a680e8-552d-40cd-9cb3-f0b32b6ee7a2.htm'>
+<area shape='rect' coords='1118,639,1138,659' href='aff7b54d-a147-42a9-98b0-48d3edadae78_46e8a683-cc5e-4947-95a1-cda03dfaa0f7.htm'>
+<area shape='rect' coords='583,1228,805,1364' href='aff7b54d-a147-42a9-98b0-48d3edadae78_6838fdf4-3095-4ca5-97d9-695ae4331598.htm'>
+<area shape='rect' coords='1118,684,1138,704' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='1118,729,1138,749' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='22,774,42,794' href='aff7b54d-a147-42a9-98b0-48d3edadae78_46e8a683-cc5e-4947-95a1-cda03dfaa0f7.htm'>
+<area shape='rect' coords='22,819,42,839' href='aff7b54d-a147-42a9-98b0-48d3edadae78_46e8a683-cc5e-4947-95a1-cda03dfaa0f7.htm'>
+<area shape='rect' coords='1118,774,1138,794' href='aff7b54d-a147-42a9-98b0-48d3edadae78_46e8a683-cc5e-4947-95a1-cda03dfaa0f7.htm'>
+</map>
+</div>
+</body></html>

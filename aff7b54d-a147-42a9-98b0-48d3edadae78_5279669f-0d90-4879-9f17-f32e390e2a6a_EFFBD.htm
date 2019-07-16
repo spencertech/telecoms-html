@@ -1,0 +1,47 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Function / 4.3 Customer Care Functions / Customer Care Functions</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5279669f-0d90-4879-9f17-f32e390e2a6a.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5279669f-0d90-4879-9f17-f32e390e2a6a_Activity.htm'>Activity</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5279669f-0d90-4879-9f17-f32e390e2a6a_EFFBD.htm'>EFFBD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5279669f-0d90-4879-9f17-f32e390e2a6a_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_5279669f-0d90-4879-9f17-f32e390e2a6a_EFFBD.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='236,88,356,158' href='aff7b54d-a147-42a9-98b0-48d3edadae78_3aafa5a6-b518-4a6f-b229-2c6539921b02.htm'>
+<area shape='rect' coords='236,223,356,293' href='aff7b54d-a147-42a9-98b0-48d3edadae78_2d98c251-7852-4974-b058-4df5ff4da4f5.htm'>
+<area shape='rect' coords='236,358,356,428' href='aff7b54d-a147-42a9-98b0-48d3edadae78_facce36f-2306-4920-9af6-4449f8a6c7cf.htm'>
+<area shape='rect' coords='236,493,356,563' href='aff7b54d-a147-42a9-98b0-48d3edadae78_f6be71e2-e68e-4bac-9bd9-67cc4d51ceba.htm'>
+<area shape='rect' coords='236,628,356,698' href='aff7b54d-a147-42a9-98b0-48d3edadae78_dbfc3664-a241-4e8e-9915-b1fd25df4cc9.htm'>
+<area shape='rect' coords='236,763,356,833' href='aff7b54d-a147-42a9-98b0-48d3edadae78_e7f003a0-ac13-4a44-8d78-0107dc6d9e2f.htm'>
+<area shape='rect' coords='236,898,356,968' href='aff7b54d-a147-42a9-98b0-48d3edadae78_229421c9-7e7e-4e85-a06f-6839fe8f3d57.htm'>
+</map>
+</div>
+</body></html>
