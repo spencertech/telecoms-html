@@ -1,0 +1,84 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Mobile Communications Network / Base Station Controller</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5abe01f6-43c3-4ef2-be86-471cf99e79d9.htm'>Property sheet</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>Base Station Controller</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>SYS.2.2</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Abbreviation</td>
+<td>BSC</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
+<td>Element</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built in</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_e1a383d5-8cab-45a3-b2b0-a451e9457af4.htm')">Component: SYS.2 Base Station Sub-system</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>performs</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_dc99b041-b4a8-4959-901a-3854c77aa5d5.htm')">Function: BSC BSC Functions</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Integrated (Root)</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_34185050-d80b-4dac-ae30-dab704032bb6.htm')">Function:  Cells, frequencies and logical channels</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_8c969bd9-83c8-4137-910e-d759658d1fee.htm')">Function:  Location and handover control</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_005a5cfa-5cf2-4047-8adc-bff91e20fbe9.htm')">Function:  Paging control</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_e07dd77d-f1b3-428e-b772-5cbbaf2feca1.htm')">Function:  Radio channel allocation</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_47ef317e-e1b8-43a2-9380-5da92a742aea.htm')">Function:  Radio channel handover</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_5ba543e1-79f3-4ddd-94c6-1aeb6e474bd6.htm')">Function:  Radio channel release</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_066d5872-3643-4882-9dca-b1f1d70a0662.htm')">Function:  Radio power control</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_cc6c2369-220e-43e0-8b8b-de64e3d43317.htm')">Function:  Resource management (BSC)</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_e018ff33-95b0-4542-9dc1-4bbfcd26d9f0.htm')">Function:  Supervise BTS units</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_e5d0edd9-41b5-407c-a7c6-03d1162d0325.htm')">Function:  Transmission network management BTS-BSC links</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Atomic</div>
+</td></tr>
+</table>
+</body></html>

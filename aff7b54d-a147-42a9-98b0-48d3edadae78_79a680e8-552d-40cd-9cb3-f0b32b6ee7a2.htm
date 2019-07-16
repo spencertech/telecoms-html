@@ -1,0 +1,79 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>ConstraintDefinition / Supported site subscribers</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_79a680e8-552d-40cd-9cb3-f0b32b6ee7a2.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_79a680e8-552d-40cd-9cb3-f0b32b6ee7a2_Parametric.htm'>Parametric</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>Supported site subscribers</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Description</td>
+<td><style type="text/css">
+			.cs2654AE3A{text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt}
+			.cs9640DBC{color:#000000;background-color:transparent;font-family:Segoe UI;font-size:9pt;font-weight:normal;font-style:normal;}
+		</style>
+		<p class="cs2654AE3A"><span class="cs9640DBC">Total supported subscribers per site, based on capacity per cell, cells per site, and traffic per subscriber. The expression uses a de-rating factor of 2.</span></p></td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Expression</td>
+<td>supportedSiteSubscribers = floor((capacityPerCell * cellsPerSite) / (trafficPerSubscriber * 2))</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Independent Variables</td>
+<td>cellsPerSite
+capacityPerCell
+trafficPerSubscriber</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Dependent Variables</td>
+<td>supportedSiteSubscribers</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>included in constraint definition</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_e98938df-851b-4afc-84f5-b9aded7c7f50.htm')">ConstraintDefinition:  BTS sites needed for capacity</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Mappings:&nbsp;</span>supportedSiteSubscribers :: supportedSiteSubscribers</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>includes constraint definition</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_6838fdf4-3095-4ca5-97d9-695ae4331598.htm')">ConstraintDefinition:  Traffic per subscriber</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Mappings:&nbsp;</span>trafficPerSubscriber :: trafficPerSubscriber</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>uses parameter from</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm')">Component: SYS.2.1 Base Transceiver Station</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Mappings:&nbsp;</span>cellsPerSite :: cellsPerSite
+capacityPerCell :: capacityPerCell</div>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>ConstraintDefinition / Supported site subscribers</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_79a680e8-552d-40cd-9cb3-f0b32b6ee7a2.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_79a680e8-552d-40cd-9cb3-f0b32b6ee7a2_Parametric.htm'>Parametric</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_79a680e8-552d-40cd-9cb3-f0b32b6ee7a2_Parametric.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='275,88,551,221' href='aff7b54d-a147-42a9-98b0-48d3edadae78_79a680e8-552d-40cd-9cb3-f0b32b6ee7a2.htm'>
+<area shape='rect' coords='275,476,551,609' href='aff7b54d-a147-42a9-98b0-48d3edadae78_6838fdf4-3095-4ca5-97d9-695ae4331598.htm'>
+<area shape='rect' coords='21,144,41,164' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='21,190,41,210' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='21,234,41,254' href='aff7b54d-a147-42a9-98b0-48d3edadae78_46e8a683-cc5e-4947-95a1-cda03dfaa0f7.htm'>
+<area shape='rect' coords='21,280,41,300' href='aff7b54d-a147-42a9-98b0-48d3edadae78_46e8a683-cc5e-4947-95a1-cda03dfaa0f7.htm'>
+<area shape='rect' coords='21,324,41,344' href='aff7b54d-a147-42a9-98b0-48d3edadae78_46e8a683-cc5e-4947-95a1-cda03dfaa0f7.htm'>
+</map>
+</div>
+</body></html>

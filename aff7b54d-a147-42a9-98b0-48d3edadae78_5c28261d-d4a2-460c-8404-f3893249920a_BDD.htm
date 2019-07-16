@@ -1,0 +1,72 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Global Network SoS / Global Network System</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_BDD.htm'>BDD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_Class.htm'>Class</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_FlowInternalBlock.htm'>FlowInternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_Hierarchy.htm'>Hierarchy</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_InterfaceBlock.htm'>InterfaceBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_InternalBlock.htm'>InternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_BDD.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='856,92,976,192' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a.htm'>
+<area shape='rect' coords='262,242,382,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_9456b9dd-6dd8-406c-bd0a-b30da9148068.htm'>
+<area shape='rect' coords='432,242,552,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_507a1838-cbf3-4008-936b-7277e3070ec6.htm'>
+<area shape='rect' coords='602,242,722,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_57436e82-44f5-48bd-9d40-27bf85031810.htm'>
+<area shape='rect' coords='772,242,892,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_1ea3ec22-a8b6-461c-a19f-fe4d0ec68430.htm'>
+<area shape='rect' coords='942,242,1062,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_a48bf59d-405c-409b-ae6c-ff8fca48754e.htm'>
+<area shape='rect' coords='1112,242,1232,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_3c1e9fd3-469d-45e1-b1ca-4b1ec62d2359.htm'>
+<area shape='rect' coords='1282,242,1402,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_d94306e2-6876-4f03-a01e-bd8d55558e97.htm'>
+<area shape='rect' coords='1452,242,1572,342' href='aff7b54d-a147-42a9-98b0-48d3edadae78_4a32bb7d-1eef-405f-941a-2742a5a0db33.htm'>
+<area shape='rect' coords='1112,392,1232,492' href='aff7b54d-a147-42a9-98b0-48d3edadae78_1de128bd-0387-4f7b-9352-f779ac5b1070.htm'>
+<area shape='rect' coords='134,542,254,642' href='aff7b54d-a147-42a9-98b0-48d3edadae78_b9889bc6-23cc-4782-b705-9a73ffa240e4.htm'>
+<area shape='rect' coords='644,542,764,642' href='aff7b54d-a147-42a9-98b0-48d3edadae78_e1a383d5-8cab-45a3-b2b0-a451e9457af4.htm'>
+<area shape='rect' coords='1409,542,1529,642' href='aff7b54d-a147-42a9-98b0-48d3edadae78_eab18d85-fe1c-4905-92ee-625a558c1612.htm'>
+<area shape='rect' coords='2089,542,2209,642' href='aff7b54d-a147-42a9-98b0-48d3edadae78_1efea2cd-c398-49b8-a1d1-6dd8993b038d.htm'>
+<area shape='rect' coords='49,692,169,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_4d0760db-62c0-4161-9aa3-5b133d7e7603.htm'>
+<area shape='rect' coords='219,692,339,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_deec7607-c84d-4d47-99d3-982027b014e8.htm'>
+<area shape='rect' coords='389,692,509,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='559,692,679,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5abe01f6-43c3-4ef2-be86-471cf99e79d9.htm'>
+<area shape='rect' coords='729,692,849,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_07034fb4-0c66-4f2f-b078-8543882188dd.htm'>
+<area shape='rect' coords='899,692,1019,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_ff9d2828-c8b9-4fee-9a5c-4f317526749b.htm'>
+<area shape='rect' coords='1069,692,1189,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_299f44ca-0149-4717-b692-a0e1e23daef3.htm'>
+<area shape='rect' coords='1239,692,1359,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_b908302b-b29c-483f-a0d5-19c799643252.htm'>
+<area shape='rect' coords='1409,692,1529,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_2fd7fd2a-d2cb-493b-ab4b-846c166ee01a.htm'>
+<area shape='rect' coords='1579,692,1699,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_13c98098-22df-4b18-b23e-5a97863b7a01.htm'>
+<area shape='rect' coords='1749,692,1869,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_f4a13962-cb2e-4f10-bee3-a3386ac34859.htm'>
+<area shape='rect' coords='1919,692,2039,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_d0e92b9e-d2af-43af-9c51-f42f180acf89.htm'>
+<area shape='rect' coords='2089,692,2209,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_4dc6b6a4-b512-4e83-b007-4c7325288912.htm'>
+<area shape='rect' coords='2259,692,2379,792' href='aff7b54d-a147-42a9-98b0-48d3edadae78_ae588181-f47a-4570-9e52-4d74d045db44.htm'>
+</map>
+</div>
+</body></html>

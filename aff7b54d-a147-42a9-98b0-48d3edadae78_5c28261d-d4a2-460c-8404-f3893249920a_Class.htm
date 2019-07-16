@@ -1,0 +1,53 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Global Network SoS / Global Network System</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_BDD.htm'>BDD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_Class.htm'>Class</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_FlowInternalBlock.htm'>FlowInternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_Hierarchy.htm'>Hierarchy</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_InterfaceBlock.htm'>InterfaceBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_InternalBlock.htm'>InternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_Class.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='369,418,489,518' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a.htm'>
+<area shape='rect' coords='41,557,161,657' href='aff7b54d-a147-42a9-98b0-48d3edadae78_1ea3ec22-a8b6-461c-a19f-fe4d0ec68430.htm'>
+<area shape='rect' coords='506,746,626,846' href='aff7b54d-a147-42a9-98b0-48d3edadae78_57436e82-44f5-48bd-9d40-27bf85031810.htm'>
+<area shape='rect' coords='698,282,818,382' href='aff7b54d-a147-42a9-98b0-48d3edadae78_3c1e9fd3-469d-45e1-b1ca-4b1ec62d2359.htm'>
+<area shape='rect' coords='235,88,355,188' href='aff7b54d-a147-42a9-98b0-48d3edadae78_4a32bb7d-1eef-405f-941a-2742a5a0db33.htm'>
+<area shape='rect' coords='41,279,161,379' href='aff7b54d-a147-42a9-98b0-48d3edadae78_9456b9dd-6dd8-406c-bd0a-b30da9148068.htm'>
+<area shape='rect' coords='506,89,626,189' href='aff7b54d-a147-42a9-98b0-48d3edadae78_a48bf59d-405c-409b-ae6c-ff8fca48754e.htm'>
+<area shape='rect' coords='698,554,818,654' href='aff7b54d-a147-42a9-98b0-48d3edadae78_507a1838-cbf3-4008-936b-7277e3070ec6.htm'>
+<area shape='rect' coords='235,748,355,848' href='aff7b54d-a147-42a9-98b0-48d3edadae78_d94306e2-6876-4f03-a01e-bd8d55558e97.htm'>
+</map>
+</div>
+</body></html>

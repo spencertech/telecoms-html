@@ -1,0 +1,78 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Global Network SoS / Global Network System</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_BDD.htm'>BDD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_Class.htm'>Class</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_FlowInternalBlock.htm'>FlowInternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_Hierarchy.htm'>Hierarchy</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_InterfaceBlock.htm'>InterfaceBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_InternalBlock.htm'>InternalBlock</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_5c28261d-d4a2-460c-8404-f3893249920a_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>Global Network System</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>SOS</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
+<td>System of Systems</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built from</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_9456b9dd-6dd8-406c-bd0a-b30da9148068.htm')">Component:  Body Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_507a1838-cbf3-4008-936b-7277e3070ec6.htm')">Component:  Emergency Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_57436e82-44f5-48bd-9d40-27bf85031810.htm')">Component:  Enterprise Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_1ea3ec22-a8b6-461c-a19f-fe4d0ec68430.htm')">Component:  Home Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_a48bf59d-405c-409b-ae6c-ff8fca48754e.htm')">Component:  Satellite Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_3c1e9fd3-469d-45e1-b1ca-4b1ec62d2359.htm')">Component:  Service Provider Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_d94306e2-6876-4f03-a01e-bd8d55558e97.htm')">Component:  Submarine Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_4a32bb7d-1eef-405f-941a-2742a5a0db33.htm')">Component:  Vehicle Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+</td></tr>
+</table>
+</body></html>

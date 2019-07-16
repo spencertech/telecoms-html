@@ -1,0 +1,49 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Requirement / Network Input Requirements / Telecommunications network</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_07f399cc-ebfc-48fa-b5c2-bd069caaae68.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_07f399cc-ebfc-48fa-b5c2-bd069caaae68_Hierarchy.htm'>Hierarchy</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_07f399cc-ebfc-48fa-b5c2-bd069caaae68_Requirements.htm'>Requirements</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_07f399cc-ebfc-48fa-b5c2-bd069caaae68_Requirements.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='758,92,942,220' href='aff7b54d-a147-42a9-98b0-48d3edadae78_07f399cc-ebfc-48fa-b5c2-bd069caaae68.htm'>
+<area shape='rect' coords='41,270,225,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_aefa8191-8391-4f85-86e9-49978d44d1b5.htm'>
+<area shape='rect' coords='262,270,452,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_4223eb66-16a4-4b53-9cf4-4687470fea07.htm'>
+<area shape='rect' coords='489,270,673,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_11da7130-c1b8-429b-8071-bcda417737ad.htm'>
+<area shape='rect' coords='710,270,894,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_ada19f32-4861-4477-8595-cb90ee3e2386.htm'>
+<area shape='rect' coords='931,270,1115,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_e767b964-6754-4dfb-b1cd-3c1ceb7845b5.htm'>
+<area shape='rect' coords='1152,270,1336,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_eced1ee8-036f-45e4-9f5c-c77c1d7ca6d4.htm'>
+<area shape='rect' coords='1373,270,1557,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_602e4a4d-5333-40b1-8a11-b5701b9c2ee0.htm'>
+<area shape='rect' coords='506,473,656,573' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+<area shape='rect' coords='1373,473,1557,635' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+</map>
+</div>
+</body></html>

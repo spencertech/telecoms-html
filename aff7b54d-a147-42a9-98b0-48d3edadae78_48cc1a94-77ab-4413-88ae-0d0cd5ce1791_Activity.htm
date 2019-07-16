@@ -1,0 +1,43 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Function / 3.2 Gateway MSC Functions / Gateway MSC Functions</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_48cc1a94-77ab-4413-88ae-0d0cd5ce1791.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_48cc1a94-77ab-4413-88ae-0d0cd5ce1791_Activity.htm'>Activity</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_48cc1a94-77ab-4413-88ae-0d0cd5ce1791_EFFBD.htm'>EFFBD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_48cc1a94-77ab-4413-88ae-0d0cd5ce1791_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_48cc1a94-77ab-4413-88ae-0d0cd5ce1791_Activity.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='91,133,191,203' href='aff7b54d-a147-42a9-98b0-48d3edadae78_e80cfea4-ad0a-453d-a8c1-d32cb0930ca2.htm'>
+<area shape='rect' coords='91,223,191,293' href='aff7b54d-a147-42a9-98b0-48d3edadae78_4cf21b81-8a2b-4849-baf7-b85d8e6d8baf.htm'>
+<area shape='rect' coords='91,313,191,383' href='aff7b54d-a147-42a9-98b0-48d3edadae78_a8ccc3e3-d6e9-4a19-967c-d622d502ca08.htm'>
+</map>
+</div>
+</body></html>
