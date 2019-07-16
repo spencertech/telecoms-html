@@ -1,0 +1,42 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>ConstraintDefinition / BTS sites needed for coverage</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_856c67b9-3aab-445a-a20b-b9c021211a1c.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_856c67b9-3aab-445a-a20b-b9c021211a1c_Parametric.htm'>Parametric</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_856c67b9-3aab-445a-a20b-b9c021211a1c_Parametric.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='297,88,522,207' href='aff7b54d-a147-42a9-98b0-48d3edadae78_856c67b9-3aab-445a-a20b-b9c021211a1c.htm'>
+<area shape='rect' coords='297,371,522,490' href='aff7b54d-a147-42a9-98b0-48d3edadae78_185bfdcd-cb77-4a8c-9fa6-584598a4a93a.htm'>
+<area shape='rect' coords='21,123,41,143' href='aff7b54d-a147-42a9-98b0-48d3edadae78_65857e6f-f553-424c-aac0-7675139f498e.htm'>
+<area shape='rect' coords='21,168,41,188' href='aff7b54d-a147-42a9-98b0-48d3edadae78_5137f998-f51c-4768-a884-fb77e9d25c17.htm'>
+</map>
+</div>
+</body></html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Function / 2.3 TRAU Functions / TRAU Functions</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_325c5335-8c16-421a-8e09-1635d92becae.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_325c5335-8c16-421a-8e09-1635d92becae_Activity.htm'>Activity</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_325c5335-8c16-421a-8e09-1635d92becae_EFFBD.htm'>EFFBD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_325c5335-8c16-421a-8e09-1635d92becae_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>TRAU Functions</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>TRAU</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Execute Decomposition</td>
+<td>True</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>allocated to</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_07034fb4-0c66-4f2f-b078-8543882188dd.htm')">Component: SYS.2.3 Transcoder Rate Adaptor Unit</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Behavior Type:&nbsp;</span>Integrated (Root)</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>decomposed by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_148057fc-0a31-4572-9e0f-22550f04fd5c.htm')">Function:  Convert PCM to voice codecs</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('aff7b54d-a147-42a9-98b0-48d3edadae78_cec8e022-2c54-44d2-8ec1-973b2634a031.htm')">Function:  Convert voice codecs to PCM</span></div>
+</td></tr>
+</table>
+</body></html>

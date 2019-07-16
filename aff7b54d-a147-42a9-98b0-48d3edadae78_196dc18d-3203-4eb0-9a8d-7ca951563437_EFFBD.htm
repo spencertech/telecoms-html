@@ -1,0 +1,50 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Function / 4.2 Billing Functions / Billing Functions</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='aff7b54d-a147-42a9-98b0-48d3edadae78_196dc18d-3203-4eb0-9a8d-7ca951563437.htm'>Property sheet</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_196dc18d-3203-4eb0-9a8d-7ca951563437_Activity.htm'>Activity</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_196dc18d-3203-4eb0-9a8d-7ca951563437_EFFBD.htm'>EFFBD</option>
+<option value='aff7b54d-a147-42a9-98b0-48d3edadae78_196dc18d-3203-4eb0-9a8d-7ca951563437_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='aff7b54d-a147-42a9-98b0-48d3edadae78_196dc18d-3203-4eb0-9a8d-7ca951563437_EFFBD.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='408,202,528,297' href='aff7b54d-a147-42a9-98b0-48d3edadae78_91be7b5e-4c7d-4963-9ea3-e15e5ef991f2.htm'>
+<area shape='rect' coords='548,196,668,291' href='aff7b54d-a147-42a9-98b0-48d3edadae78_ef87959c-7907-4de0-ab86-7c9eaab8f486.htm'>
+<area shape='rect' coords='236,473,356,568' href='aff7b54d-a147-42a9-98b0-48d3edadae78_8cf06cab-6a36-454b-aa76-ebe2a3acaa13.htm'>
+<area shape='rect' coords='376,473,496,568' href='aff7b54d-a147-42a9-98b0-48d3edadae78_73129d5e-2698-4872-9d00-51e3ae9298f7.htm'>
+<area shape='rect' coords='503,658,623,753' href='aff7b54d-a147-42a9-98b0-48d3edadae78_50728f1a-0e51-40c9-a0e2-0faec4000fa1.htm'>
+<area shape='rect' coords='503,368,603,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_de81daba-177a-485f-89bc-784ffdbb56a4.htm'>
+<area shape='rect' coords='358,88,458,143' href='aff7b54d-a147-42a9-98b0-48d3edadae78_883eedaa-005d-4fbd-a3f6-a79bb7d1a0f4.htm'>
+<area shape='rect' coords='376,368,476,423' href='aff7b54d-a147-42a9-98b0-48d3edadae78_ae1e0f6c-c772-4679-b94a-40757bffd93e.htm'>
+<area shape='rect' coords='613,88,713,143' href='aff7b54d-a147-42a9-98b0-48d3edadae78_e6bf7f11-7152-4bf7-bb1c-b578525edcf0.htm'>
+<area shape='rect' coords='158,88,258,143' href='aff7b54d-a147-42a9-98b0-48d3edadae78_94d891dd-161e-435e-9b42-42572e2fe34d.htm'>
+</map>
+</div>
+</body></html>
